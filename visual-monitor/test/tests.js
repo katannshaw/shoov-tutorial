@@ -58,10 +58,10 @@ describe('Visual monitor testing', function() {
     shoovWebdrivercss.after(done);
   });
 
-  it('should show the home page',function(done) {
-    client
-      .url(baseUrl)
-      .webdrivercss(testName + '.homepage', {
+  it('should show the static page',function(done) {
+  client
+    .url(baseUrl)
+    .webdrivercss(testName + '.static', {
         name: '1',
         exclude: [],
         remove: [],
